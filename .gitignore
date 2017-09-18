@@ -1,0 +1,15 @@
+db.sqlite3
+
+local_settings.py
+
+###################################
+##  git config --global core.excludesfile .gitignore
+##  to exclude files .pyc
+###################################
+*.pyc
+
+media
+static
+
+bower_components/
+node_modules/
