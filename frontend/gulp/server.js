@@ -35,6 +35,24 @@ function browserSyncInit(baseDir, browser) {
    */
   // server.middleware = proxyMiddleware('/users', {target: 'http://jsonplaceholder.typicode.com', changeOrigin: true});
 
+
+
+  ///////////////////////////////////////////////////////////////////////////
+  //  REDIRECT THE ENDPOINTS OF THE API TO DJANGO REST FRAMEWORK BACKEND
+  ///////////////////////////////////////////////////////////////////////////
+  server.middleware = proxyMiddleware(
+    [ '/api', '/media', '/static' ],
+    {
+      target: 'http://localhost:8000',
+      changeOrigin: true,
+      pathRewrite: {
+          '\/api(\/\w+)+' : '/api/**/'
+      }
+    }
+  );
+  ///////////////////////////////////////////////////////////////////////////
+
+
   browserSync.instance = browserSync.init({
     startPath: '/',
     server: server,
