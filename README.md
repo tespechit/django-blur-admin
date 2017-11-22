@@ -1,48 +1,48 @@
-[![Build Status](https://travis-ci.org/akveo/blur-admin.svg?branch=master)](https://travis-ci.org/akveo/blur-admin)
 
-# BlurAdmin Angular admin panel front-end framework
+# BlurAdmin AngularJS admin panel front-end framework and back-end based on Django Python
 
-Customizable admin panel framework made with :heart: by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
+Basic REST API based on Django Python
 
-### Demo
-**[Mint version demo](http://akveo.com/blur-admin-mint/)**             |  **[Blur version demo](http://akveo.com/blur-admin/)**
-:-------------------------:|:-------------------------:
-![Mint version demo](http://i.imgur.com/A3TMviJ.png)  |  ![Blur version demo](http://i.imgur.com/EAoiK2O.jpg)
+Customizable admin panel framework made by [Akveo team](http://akveo.com/). 
 
-## Angular 2 version
-Here you can find Angular2 based version: [ng2-admin](https://github.com/akveo/ng2-admin).
+## Back-end dependencies (Linux)
+- Python 2.7
+- PIP
+- Django 1.11
+- virtualenv
+- virtualenvwrapper
 
-### Documentation
+## Front-end dependencies
+- NodeJS
+- NPM
+- Bower
+- Gulp
+
+## First steps back-end (Linux)
+1. Go to your favorite folder `cd ~/my_projects/`
+2. Clone this repo `git clone https://github.com/cmchecha/django-blur-admin.git`
+3. If you don't have a virtualenv created: `mkvirtualenv my_venv`
+4. Activate your virtualenv with virtualenvwrapper `workon my_venv`
+5. Install back-end dependencies `pip install -r requirements.txt`
+6. Run django development server `python manage.py runserver 0.0.0.0:8000`
+7. Your REST API is running in `localhost:8000`
+
+## For your AngularJS front-end
+1. Go to the frontend folder `cd frontend/`
+2. Install front-end dependencies `npm install`
+3. Install bower dependencies `bower install`
+4. Run this command `gulp serve`
+5. Your frontend is running in `localhost:3000`
+
+## Front-end documentation
 Installation, customization and other useful articles: https://akveo.github.io/blur-admin/
-
-*If you have problems installing and just want to download JS and css files, you can find download links here*: http://akveo.github.io/blur-admin/articles/091-downloads/
 
 ## How can I support developers?
 - Star our GitHub repo
 - Create pull requests, submit bugs, suggest new features or documentation updates
-- Follow us on [Twitter](https://twitter.com/akveo_inc)
-- Like our page on [Facebook](https://www.facebook.com/akveo/)
-
-## Can I hire you guys?
-Yes! We are available for hire. Visit [our homepage](http://akveo.com/) or simply leave us a note to contact@akveo.com. We will be happy to work with you!
-
-## Features
-* Responsive layout
-* High resolution
-* Bootstrap CSS Framework
-* Sass
-* Gulp build
-* AngularJS
-* Jquery
-* Charts (amChart, Chartist, Chart.js, Morris)
-* Maps (Google, Leaflet, amMap)
-* etc
 
 License
 -------------
 <a href=/LICENSE.txt target="_blank">MIT</a> license.
 
-### From akveo
-
-Enjoy!
-We're always happy to hear your feedback.
+### From akveo and cmchecha
