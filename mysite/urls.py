@@ -19,8 +19,10 @@ from django.contrib import admin
 from django.conf.urls import url, include
 from myapp import urls as app_urls
 from django.conf.urls.static import static
+from django.views.generic import RedirectView
 
 urlpatterns = [
+    url(r'^$', RedirectView.as_view(url='/api/')),
     url(r'^admin/', admin.site.urls),
     url(r'', include(app_urls)),
 ]
