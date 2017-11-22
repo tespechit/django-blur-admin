@@ -1,9 +1,10 @@
+## It's not finished
 
 # BlurAdmin AngularJS admin panel front-end framework and back-end based on Django Python
 
 Basic REST API based on Django Python
 
-Customizable admin panel framework made by [Akveo team](http://akveo.com/). 
+Customizable admin panel framework made by [Akveo team](http://akveo.com/).
 
 ## Back-end dependencies (Linux)
 - Python 2.7
