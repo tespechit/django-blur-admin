@@ -25,8 +25,9 @@ Customizable admin panel framework made by [Akveo team](http://akveo.com/).
 3. If you don't have a virtualenv created: `mkvirtualenv my_venv`
 4. Activate your virtualenv with virtualenvwrapper `workon my_venv`
 5. Install back-end dependencies `pip install -r requirements.txt`
-6. Run django development server `python manage.py runserver 0.0.0.0:8000`
-7. Your REST API is running in `localhost:8000`
+6. Run django DB makemigrations `python manage.py makemigrations`
+7. Run django DB migrate `python manage.py migrate`
+8. Your REST API is running in `localhost:8000`
 
 ## For your AngularJS front-end
 1. Go to the frontend folder `cd frontend/`
